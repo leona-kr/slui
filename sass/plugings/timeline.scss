@@ -1,0 +1,140 @@
+.simileAjax-bubble-container{
+	margin-top:5px;
+
+	.simileAjax-bubble-border-top-left-pngTranslucent,
+	.simileAjax-bubble-border-top-right-pngTranslucent,
+	.simileAjax-bubble-border-bottom-left-pngTranslucent,
+	.simileAjax-bubble-border-bottom-right-pngTranslucent,
+	.simileAjax-bubble-border-left-pngTranslucent,
+	.simileAjax-bubble-border-right-pngTranslucent,
+	.simileAjax-bubble-border-top-pngTranslucent,
+	.simileAjax-bubble-border-bottom-pngTranslucent,
+	.simileAjax-bubble-contentContainer{
+		background:rgba(53,53,53,.75);
+	}
+	.simileAjax-bubble-arrow-point-down-pngTranslucent,
+	.simileAjax-bubble-arrow-point-right-pngTranslucent{
+		background:none;
+	}
+
+	div.simileAjax-bubble-border-top-left{
+		top: -10px;
+		left: -10px;
+		width: 10px;
+		height: 10px;
+		-webkit-border-radius: 5px 0 0 0;
+		-moz-border-radius: 5px 0 0 0;
+		-ms-border-radius: 5px 0 0 0;
+		border-radius: 5px 0 0 0;
+	}
+	div.simileAjax-bubble-border-top-right{
+		top: -10px;
+		right: -10px;
+		width: 10px;
+		height: 10px;
+		-webkit-border-radius: 0 5px 0 0;
+		-moz-border-radius: 0 5px 0 0;
+		-ms-border-radius: 0 5px 0 0;
+		border-radius: 0 5px 0 0;
+	}
+	div.simileAjax-bubble-border-bottom-left{
+		bottom: -10px;
+		left: -10px;
+		width: 10px;
+		height: 10px;
+		-webkit-border-radius: 0 0 0 5px;
+		-moz-border-radius: 0 0 0 5px;
+		-ms-border-radius: 0 0 0 5px;
+		border-radius: 0 0 0 5px;
+	}
+	div.simileAjax-bubble-border-bottom-right{
+		bottom: -10px;
+		right: -10px;
+		width: 10px;
+		height: 10px;
+		-webkit-border-radius: 0 0 5px 0;
+		-moz-border-radius: 0 0 5px 0;
+		-ms-border-radius: 0 0 5px 0;
+		border-radius: 0 0 5px 0;
+	}
+	div.simileAjax-bubble-border-left{
+		left: -10px;
+		width: 10px;
+	}
+	div.simileAjax-bubble-border-right{
+		right: -10px;
+		width: 10px;
+	}
+	div.simileAjax-bubble-border-top{
+		top:-10px;
+		height:10px;
+	}
+	div.simileAjax-bubble-border-bottom{
+		bottom:-10px;
+		height:10px;
+	}
+
+
+	div.simileAjax-bubble-contentContainer{
+		overflow:visible;
+	}
+	div.simileAjax-bubble-contentContainer > div{
+		width:auto !important;
+	}
+	.timeline-event-bubble-title{
+		margin-bottom:7px;
+		padding-bottom:7px;
+		border-bottom-width:2px;
+		border-color:#ff8400;
+		color:#ff8400;
+	}
+	.timeline-event-bubble-body{
+		color:#ffdf7f;
+		font-size:11px;
+	}
+	.timeline-event-bubble-time{
+		color:#ffdf7f;
+		font-size:11px;
+	}
+
+	div.simileAjax-bubble-close{
+		right: -7px;
+		top: 2px;
+		background:none;
+	}
+	.timeline-event-bubble-wiki{
+		display:none;
+	}
+	div.simileAjax-bubble-arrow-point-down{
+		bottom:-22px;
+		height:12px;
+		&:after{
+			content:'';
+			display:block;
+			vertical-align:middle;
+			width:0;
+			height:0;
+			margin:0 auto;
+			border-style:solid;
+			border-width:12px 12px 0 12px;
+			border-color:rgba(53,53,53,.75) transparent transparent;
+		}
+	}
+	div.simileAjax-bubble-arrow-point-right{
+		right:-22px;
+		width:12px;
+		height:24px;
+		margin-top:12px;
+		&:after{
+			content:'';
+			display:block;
+			vertical-align:middle;
+			width:0;
+			height:0;
+			margin:0 auto;
+			border-style:solid;
+			border-width:12px 0 12px 12px;
+			border-color:transparent rgba(53,53,53,.75) transparent;
+		}
+	}
+}

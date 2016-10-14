@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+@import "inc/_declare.scss";
+@import "inc/reset.scss";
+@import "inc/fonts.scss";
+@import "inc/layout.scss";
+@import "inc/elements";
+@import "inc/contents.scss";
+@import "inc/pages.scss";
+
+
+
+
+// 위험도 컬러 (임시)
+td.color_ec1{background-color:#fff200 !important; cursor:pointer; color:#000 !important}
+td.color_ec2{background-color:#ffc332 !important; cursor:pointer; color:#000 !important}
+td.color_ec3{background-color:#ff991e !important; cursor:pointer; color:#000 !important}
+td.color_ec4{background-color:#fb8258 !important; cursor:pointer; color:#000 !important}
+td.color_ec5{background-color:#f25a4a !important; cursor:pointer; color:#eee !important}
+td.color_ec6{background-color:#ed1c24 !important; cursor:pointer; color:#eee !important}

@@ -1,0 +1,1 @@
+"use strict";_SL.nmspc("inc").header=function(){var a={urlUserInfoJson:gCONTEXT_PATH+"interface/user_themeInfo.json"},b=function(){$("body").requestData(a.urlUserInfoJson,{},{callback:function(a,b,c){gCONTEXT_THEME=a,console.log("gCONTEXT : ",gCONTEXT_THEME)}})};return{init:b}}(),$(function(){slapp.inc.header.init()});

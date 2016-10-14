@@ -1,0 +1,175 @@
+@charset "UTF-8";
+@import "inc/_declare.scss";
+
+a:hover{
+	color:inherit;
+}
+
+//theme-dark
+.gridster {
+	& > ul > li {
+		border-color:#555;
+		background: #222;
+		&.item-hold,
+		&.item-hover{
+			.area-header{ background-color:#000 }
+			&[data-label='1'] .area-header{ background-color:#17239f }
+			&[data-label='2'] .area-header{ background-color:#334c19 }
+			&[data-label='3'] .area-header{ background-color:#4d240c }
+		}
+	}
+	.player {
+		@include opacity(50);
+	}
+	.gs-resize-handle-both:after{
+		background-position:-134px -23px;
+	}
+}
+.group-board{
+	[data-label='1'] .area-header-side{
+		[class^='icon-']{
+			color:#7dcbff;
+			&:hover{
+				color:#daf3fd;
+			}
+		}
+	}
+	[data-label='2'] .area-header-side{
+		[class^='icon-']{
+			color:#89cf43;
+			&:hover{
+				color:$color-key1;
+			}
+		}
+	}
+	[data-label='3'] .area-header-side{
+		[class^='icon-']{
+			color:#ff8400;
+			&:hover{
+				color:#ffc07d;
+			}
+		}
+	}
+}
+
+.group-board{
+	background-color:#333;
+	.grid-bg{
+		border-color:#2c2c2c;
+		.line-col{border-right-color:#2c2c2c;}
+		.line-row{border-bottom-color:#2c2c2c;}
+		.line-guide{border-right-color:#334c19;}
+	}
+	.area-header{
+		border-color: #000;
+
+		.area-title{
+			color:#fff;
+			span{
+				color:#999;
+			}
+		}
+	}
+	.area-header-side{
+		[class^='icon-']{
+			color:#999;
+			&:hover{
+				color:#ccc;
+			}
+		}
+	}
+	.area-body{
+		border-color: #000;
+		color:#999;
+	}
+	.jqx-widget{
+		color:#fff;
+	}
+	.jqx-widget-content{
+		border-color:#333;
+	}
+	.jqx-widget-header.jqx-grid-header{
+		background:#2d2d2d;
+		border-color:#333;
+	}
+	.jqx-grid-column-header,
+	.jqx-grid-columngroup-header{
+		border-color:#333;
+		color:#fff;
+	}
+	.jqx-grid-cell{
+		border-color:#333;
+	}
+	table.grid-table-group{
+		thead{
+			background:#2d2d2d;
+		}
+		th{
+			border-color:#333 #333 #333 transparent;
+			color:#fff;
+		}
+		td{
+			border-color:#333;
+			color:#fff;
+		}
+	}
+}
+.btn-addboard{
+	color:#777;
+	&:hover,
+	&.open{
+		color:#fff;
+	}
+}
+.sp-title{
+	h5{
+		&:before{
+			background-position:-8px -50px;
+		}
+		.text-gray{
+			color:#c8c8c8 !important;
+		}
+	}
+}
+.area-status{
+	li{
+		color:#c8c8c8;
+		.label{
+			&:before{
+				background-color:#c8c8c8;
+			}
+		}
+		b{
+			color:#fff;
+		}
+	}
+}
+.component-interlock{
+	.sp-bottom{
+		border-color:#333;
+	}
+	.num{
+		color:#ccc;
+	}
+}
+.component-count .wrap>div{
+	color:#ccc;
+}
+
+.row-link:hover{
+	background-color:white(.2);
+}
+
+
+.fusioncharts-container > svg{background-color: rgba(34,34,34,1) !important}
+
+//jqx gauge
+.jqx-gauge-label{fill:#ffffff;}
+
+// 위험도 컬러 (임시)
+td.color_ec1{background-color:inherit !important; cursor:pointer; color:#fff200 !important}
+td.color_ec2{background-color:inherit !important; cursor:pointer; color:#ffc332 !important}
+td.color_ec3{background-color:inherit !important; cursor:pointer; color:#ff991e !important}
+td.color_ec4{background-color:inherit !important; cursor:pointer; color:#fb8258 !important}
+td.color_ec5{background-color:inherit !important; cursor:pointer; color:#f25a4a !important}
+td.color_ec6{background-color:inherit !important; cursor:pointer; color:#ed1c24 !important}
